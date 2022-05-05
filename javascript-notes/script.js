@@ -29,6 +29,12 @@
 3. 'console.error()'
 3. 'console.table()'
 
+// 🌈 Styling 'console.log()' like this --> 
+      console.log(
+        "`cDeveloped with ❤️ by Mikel Kamel 👉 https://mikelkamel.com/",
+        "font-size:12px;font-weight: bold;color:#fff; background-color: #6e52ff; padding:5px 10px;border-radius:4px;"
+      );
+
 
 
 // ***********************************
@@ -1008,7 +1014,7 @@ document.querySelector('.message').textContent = 'Correct Answer!';
 console.log(document.querySelector(".guess").value);
 
 // Setting the value of an INPUT (".value") property *******
-document.querySelector(.guess).value = 23;
+document.querySelector(".guess").value = 23;
 
 **** WHENEVER WE GET SOMETHING FROM THE USER INTERFACE (ie: from an Input field), it ussually is a STRING. ****
 
@@ -6376,6 +6382,8 @@ window.addEventListener('beforeunload', function(event) {
    
 // Adding 'defer' attribute to the '<script>' tag (the prefered way of loading our OWN scripts, and also when the order matters)
 <script defer src="script.js"> // [🌟 use this instead of the Regular way, doesnt support old browsers tho]
+  
+    // 'defer' makes sure our entire HTML loads BEFORE loading any of our JavaScript. Adding script the regular way (at the end of body tag) can slow down our download/load speed.
   
   // gets added in the '<head>' tag in HTML. Doesnt make sense to add it in '<body>' tag. Watch video 📺.
     
